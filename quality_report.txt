@@ -1,0 +1,53 @@
+======================================================================
+DATA QUALITY REPORT
+======================================================================
+
+Generated: 2026-02-03 17:11:51
+
+OVERVIEW
+----------------------------------------------------------------------
+Total Records Processed: 11
+Valid Records: 7
+Invalid Records: 4
+Validation Success Rate: 63.6%
+
+FIELD COMPLETENESS
+----------------------------------------------------------------------
+author          ████████████░░░░░░░░  63.6%
+content         ██████████████████░░  90.9%
+date            ████████████░░░░░░░░  63.6%
+title           ████████████████░░░░  81.8%
+url             ██████████████████░░  90.9%
+
+COMMON VALIDATION FAILURES
+----------------------------------------------------------------------
+Empty Field                      3 occurrences
+Missing Required Field           1 occurrences
+Invalid Title                    1 occurrences
+Invalid URL                      1 occurrences
+Content Too Short                1 occurrences
+
+DETAILED INVALID RECORDS
+----------------------------------------------------------------------
+
+Record #4:
+  ✗ Required field is empty: title
+
+Record #6:
+  ✗ Missing required field: title
+
+Record #8:
+  ✗ Title too short: 1 characters (minimum: 3)
+  ✗ Invalid URL domain format: invalid
+  ✗ Content too short: 22 characters (minimum: 50)
+  ⚠ Author field is missing or empty
+
+Record #11:
+  ✗ Required field is empty: content
+  ✗ Required field is empty: url
+
+======================================================================
+SUMMARY
+======================================================================
+✓ 7 records are ready for use
+✗ 4 records need attention
