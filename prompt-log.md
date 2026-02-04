@@ -1,8 +1,8 @@
 # AI-Assisted Development Process Log
 
 ## Project: Data Cleaning and Validation Pipeline
-**Course**: IIMT3688 - Data Quality and Web Scraping  
-**Assignment**: Assignment 1  
+**Course**: IIMT3688 Advanced AI Applications in Business  
+**Assignment**: Assignment 1: Data Pipeline  
 **Date**: February 4, 2026
 
 ---
@@ -324,3 +324,4 @@ Human oversight ensured:
 - Appropriate error handling
 - Code maintainability
 - Assignment requirement compliance
+
