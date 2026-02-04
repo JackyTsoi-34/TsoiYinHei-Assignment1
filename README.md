@@ -47,8 +47,8 @@ The pipeline will:
 1. Load data from `sample_data.json`
 2. Clean all records using cleaning functions
 3. Validate cleaned data against quality rules
-4. Save results to `cleaned_output.json`
-5. Generate quality report in `quality_report.txt`
+4. Save **only valid records** to `cleaned_output.json`
+5. Generate quality report in `quality_report.txt` (documenting all invalid records)
 
 ### Using Individual Modules
 
@@ -78,8 +78,8 @@ validation_result = validator.validate_record(record)
 - Invalid URLs
 
 **Output Metrics**:
-- Valid Records: 7 (63.6%)
-- Invalid Records: 4 (36.4%)
+- Valid Records: 7 (63.6%) - saved to `cleaned_output.json`
+- Invalid Records: 4 (36.4%) - documented in `quality_report.txt`
 - Field Completeness: Content (90.9%), URL (90.9%), Title (81.8%), Author/Date (63.6%)
 
 ## Configuration
@@ -103,6 +103,5 @@ def custom_cleaning_function(self, text):
 - Standard library only (no external packages required)
 
 ## Author
-- Tsoi Yin Hei (3036074825)
-- Created for IIMT3688 Assignment 1 - Data Pipeline
-
+Tsoi Yin Hei (3036074825)
+Created for IIMT3688 Assignment 1 - Data Pipeline

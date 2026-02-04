@@ -21,13 +21,6 @@
     "author": "James' O'Brien"
   },
   {
-    "title": "",
-    "content": "Short text",
-    "url": "notavalidurl",
-    "date": "",
-    "author": ""
-  },
-  {
     "title": "Sports Team Wins Championship in Thrilling Finale",
     "content": "In an exciting conclusion to the season, the local sports team secured the championship title with a dramatic victory in the final minutes of play. Fans erupted in celebration as the team clinched their first title in over a decade. The victory was the result of months of dedicated training and teamwork, according to the head coach. The championship win is expected to boost local pride and tourism in the region.",
     "url": "https://sports-daily.com/championship-win-2024",
@@ -35,21 +28,11 @@
     "author": "Tom Anderson"
   },
   {
-    "content": "Artificial intelligence researchers have achieved a new milestone in natural language processing. The breakthrough could lead to more sophisticated AI assistants and improved machine translation services. The research team published their findings in a peer-reviewed journal and shared their code with the open-source community.",
-    "url": "https://tech-blog.com/ai-advancement"
-  },
-  {
     "title": "Financial Markets Show Mixed Results",
     "content": "Stock markets displayed mixed performance today as investors reacted to recent economic data and corporate earnings reports. Technology stocks led gains while energy sector faced pressure from commodity price fluctuations. & analysts suggest that market volatility may continue in the coming weeks as geopolitical tensions remain unresolved. Financial advisors recommend maintaining diversified portfolios during uncertain times.",
     "url": "https://finance-news.net/market-update",
     "date": "2024-01-28",
     "author": "Emily Davis & Associates"
-  },
-  {
-    "title": "A",
-    "content": "Too short content here",
-    "url": "http://invalid",
-    "date": ""
   },
   {
     "title": "Educational Reform Proposal Gains Traction",
@@ -64,10 +47,5 @@
     "url": "https://health-journal.com/exercise-study-results",
     "date": "2024-02-01",
     "author": "Dr. Amanda Williams"
-  },
-  {
-    "title": "Another Record Missing Required Fields",
-    "content": "",
-    "url": ""
   }
 ]

@@ -3,7 +3,7 @@
 ## Project: Data Cleaning and Validation Pipeline
 **Course**: IIMT3688 - Data Quality and Web Scraping  
 **Assignment**: Assignment 1  
-**Date**: February 3, 2026
+**Date**: February 4, 2026
 
 ---
 
@@ -174,8 +174,8 @@ python pipeline.py
 
 ### Results
 - **Total Records**: 11
-- **Valid Records**: 7 (63.6%)
-- **Invalid Records**: 4 (36.4%)
+- **Valid Records**: 7 (63.6%) - saved to `cleaned_output.json`
+- **Invalid Records**: 4 (36.4%) - documented in `quality_report.txt`
 
 ### Field Completeness
 - Content: 90.9%
@@ -276,9 +276,42 @@ Requested comprehensive but concise documentation (1 page max) covering:
 
 ---
 
+## Phase 8: Final Refinement (February 4, 2026) (5 minutes)
+
+### Clarification from TA
+Received email response from TA Yuming:
+
+> Dear Jacky,
+> 
+> Thank you for your questions about Assignment 1.
+> 
+> For cleaned_output.json: Include only items that pass all validation requirements. Invalid records should be documented in your quality_report.txt.
+> 
+> For additional files: You may include a run.py execution script, but do not deviate from the specified file structure. All cleaning logic must be in cleaner.py and all validation logic must be in validator.py.
+
+### Issue Identified
+Initial implementation saved all records (both valid and invalid) to `cleaned_output.json`, which did not meet the assignment requirement.
+
+### Correction Applied
+Modified `pipeline.py` to filter and save only valid records:
+```python
+valid_data = [
+    record for i, record in enumerate(cleaned_data)
+    if validation_results['records'][i]['is_valid']
+]
+```
+
+### Final Output Behavior
+- **`cleaned_output.json`**: Contains only the 7 valid records that passed all validation requirements
+- **`quality_report.txt`**: Documents all 4 invalid records with detailed error messages
+
+This ensures the output file is production-ready and contains only high-quality, validated data.
+
+---
+
 ## Conclusion
 
-This project successfully demonstrates AI-assisted development of a production-quality data pipeline. The modular design, comprehensive error handling, and detailed reporting make it suitable for real-world data quality applications. All assignment requirements were met within one hour of development time.
+This project successfully demonstrates AI-assisted development of a production-quality data pipeline. The modular design, comprehensive error handling, and detailed reporting make it suitable for real-world data quality applications. All assignment requirements were met, with final refinement ensuring only valid records appear in the cleaned output.
 
 The AI assistance was particularly valuable for:
 - Generating boilerplate code quickly

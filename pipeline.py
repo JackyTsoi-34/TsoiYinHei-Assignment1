@@ -268,10 +268,14 @@ class DataPipeline:
         print(f"  - Valid: {validation_results['valid_records']}")
         print(f"  - Invalid: {validation_results['invalid_records']}")
         
-        # Step 4: Save cleaned data
+        # Step 4: Save cleaned data (only valid records)
         print("\nStep 4: Saving cleaned data...")
-        # Save all cleaned records
-        if not self.save_data(cleaned_data, output_file):
+        # Filter to keep only valid records
+        valid_data = [
+            record for i, record in enumerate(cleaned_data)
+            if validation_results['records'][i]['is_valid']
+        ]
+        if not self.save_data(valid_data, output_file):
             return False
         
         # Step 5: Generate quality report
