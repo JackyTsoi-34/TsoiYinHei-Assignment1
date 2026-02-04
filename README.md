@@ -103,5 +103,6 @@ def custom_cleaning_function(self, text):
 - Standard library only (no external packages required)
 
 ## Author
-Tsoi Yin Hei (3036074825)
-Created for IIMT3688 Assignment 1 - Data Pipeline
+- Tsoi Yin Hei (3036074825)
+- Created for IIMT3688 Assignment 1 - Data Pipeline
+
